@@ -109,10 +109,10 @@ pub async fn run() {
         let size = LogicalSize::new(WIDTH as f64, HEIGHT as f64);
 
         WindowBuilder::new()
-            .with_decorations(true)
+            .with_decorations(false)
             .with_transparent(true)
             .with_always_on_top(true)
-            .with_resizable(true)
+            .with_resizable(false)
             .with_title("A fantastic window!")
             .with_inner_size(size)
             .with_min_inner_size(size)
